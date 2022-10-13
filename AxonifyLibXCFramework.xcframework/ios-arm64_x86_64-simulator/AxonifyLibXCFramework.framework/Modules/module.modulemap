@@ -1,0 +1,4 @@
+framework module AxonifyLibXCFramework {
+  header "AxonifyLibXCFramework-Swift.h"
+  requires objc
+}
