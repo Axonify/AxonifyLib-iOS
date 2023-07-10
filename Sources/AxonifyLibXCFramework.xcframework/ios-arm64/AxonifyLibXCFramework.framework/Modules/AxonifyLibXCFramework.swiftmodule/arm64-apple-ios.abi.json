@@ -32,6 +32,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AxonifyLibXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "TenantService",
         "printedName": "TenantService",
@@ -118,14 +128,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:21AxonifyLibXCFramework13TenantServiceC23getUrlStringForTrainingSSyF",
-            "mangledName": "$s21AxonifyLibXCFramework13TenantServiceC23getUrlStringForTrainingSSyF",
+            "usr": "s:21AxonifyLibXCFramework13TenantServiceC23getUrlStringForTrainingSSSgyF",
+            "mangledName": "$s21AxonifyLibXCFramework13TenantServiceC23getUrlStringForTrainingSSSgyF",
             "moduleName": "AxonifyLibXCFramework",
             "declAttributes": [
               "AccessControl"
@@ -481,6 +499,16 @@
         "printedName": "SafariServices",
         "declKind": "Import",
         "moduleName": "AxonifyLibXCFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AxonifyLibXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -1485,22 +1513,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIColor?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
               }
             ],
             "declKind": "Var",
-            "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC17splashScreenColorSo7UIColorCSgvp",
-            "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC17splashScreenColorSo7UIColorCSgvp",
+            "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC17splashScreenColorSo7UIColorCvp",
+            "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC17splashScreenColorSo7UIColorCvp",
             "moduleName": "AxonifyLibXCFramework",
             "declAttributes": [
               "Custom",
@@ -1517,22 +1537,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UIColor?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIColor",
-                        "printedName": "UIKit.UIColor",
-                        "usr": "c:objc(cs)UIColor"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC17splashScreenColorSo7UIColorCSgvg",
-                "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC17splashScreenColorSo7UIColorCSgvg",
+                "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC17splashScreenColorSo7UIColorCvg",
+                "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC17splashScreenColorSo7UIColorCvg",
                 "moduleName": "AxonifyLibXCFramework",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1549,22 +1561,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UIColor?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIColor",
-                        "printedName": "UIKit.UIColor",
-                        "usr": "c:objc(cs)UIColor"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC17splashScreenColorSo7UIColorCSgvs",
-                "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC17splashScreenColorSo7UIColorCSgvs",
+                "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC17splashScreenColorSo7UIColorCvs",
+                "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC17splashScreenColorSo7UIColorCvs",
                 "moduleName": "AxonifyLibXCFramework",
                 "implicit": true,
                 "accessorKind": "set"
@@ -1581,8 +1585,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC17splashScreenColorSo7UIColorCSgvM",
-                "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC17splashScreenColorSo7UIColorCSgvM",
+                "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC17splashScreenColorSo7UIColorCvM",
+                "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC17splashScreenColorSo7UIColorCvM",
                 "moduleName": "AxonifyLibXCFramework",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -2400,21 +2404,29 @@
           {
             "kind": "Function",
             "name": "clearAppData",
-            "printedName": "clearAppData()",
+            "printedName": "clearAppData(reset:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC12clearAppDatayyF",
-            "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC12clearAppDatayyF",
+            "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC12clearAppData5resetySb_tF",
+            "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC12clearAppData5resetySb_tF",
             "moduleName": "AxonifyLibXCFramework",
             "declAttributes": [
               "Custom",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4480,6 +4492,43 @@
           },
           {
             "kind": "Var",
+            "name": "malformedURL",
+            "printedName": "malformedURL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AxonifyLibXCFramework.AxonifyError.Type) -> AxonifyLibXCFramework.AxonifyError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AxonifyError",
+                    "printedName": "AxonifyLibXCFramework.AxonifyError",
+                    "usr": "s:21AxonifyLibXCFramework0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AxonifyLibXCFramework.AxonifyError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AxonifyError",
+                        "printedName": "AxonifyLibXCFramework.AxonifyError",
+                        "usr": "s:21AxonifyLibXCFramework0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21AxonifyLibXCFramework0A5ErrorO12malformedURLyA2CmF",
+            "mangledName": "$s21AxonifyLibXCFramework0A5ErrorO12malformedURLyA2CmF",
+            "moduleName": "AxonifyLibXCFramework"
+          },
+          {
+            "kind": "Var",
             "name": "loadTimeout",
             "printedName": "loadTimeout",
             "children": [
@@ -5124,455 +5173,392 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 269,
-      "length": 10,
-      "value": "\"resetApp\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 307,
-      "length": 17,
-      "value": "\"hideLoadingView\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 347,
-      "length": 12,
-      "value": "\"appDidLoad\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 395,
-      "length": 24,
-      "value": "\"enableScalingInWebView\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 455,
-      "length": 25,
-      "value": "\"disableScalingInWebView\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 508,
-      "length": 17,
-      "value": "\"requestPushData\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 548,
-      "length": 12,
-      "value": "\"oauthLogin\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 592,
-      "length": 21,
-      "value": "\"reauthenticateOAuth\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 642,
-      "length": 18,
-      "value": "\"storeCredentials\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 692,
-      "length": 21,
-      "value": "\"retrieveCredentials\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 742,
-      "length": 18,
-      "value": "\"clearCredentials\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 780,
-      "length": 9,
-      "value": "\"openUrl\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 820,
-      "length": 20,
-      "value": "\"closeChildWebViews\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 872,
-      "length": 21,
-      "value": "\"showReviewMobileApp\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 922,
-      "length": 18,
-      "value": "\"getMobileAppInfo\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 986,
-      "length": 13,
-      "value": "\"sendMessage\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 269,
-      "length": 10,
-      "value": "\"resetApp\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 307,
-      "length": 17,
-      "value": "\"hideLoadingView\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 347,
-      "length": 12,
-      "value": "\"appDidLoad\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 395,
-      "length": 24,
-      "value": "\"enableScalingInWebView\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 455,
-      "length": 25,
-      "value": "\"disableScalingInWebView\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 508,
-      "length": 17,
-      "value": "\"requestPushData\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 548,
-      "length": 12,
-      "value": "\"oauthLogin\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 592,
-      "length": 21,
-      "value": "\"reauthenticateOAuth\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 642,
-      "length": 18,
-      "value": "\"storeCredentials\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 692,
-      "length": 21,
-      "value": "\"retrieveCredentials\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 742,
-      "length": 18,
-      "value": "\"clearCredentials\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 780,
-      "length": 9,
-      "value": "\"openUrl\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 820,
-      "length": 20,
-      "value": "\"closeChildWebViews\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 872,
-      "length": 21,
-      "value": "\"showReviewMobileApp\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 922,
-      "length": 18,
-      "value": "\"getMobileAppInfo\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 986,
-      "length": 13,
-      "value": "\"sendMessage\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 1527,
+      "offset": 724,
       "length": 21,
       "value": "\"AxonifyLibXCFramework.BaseWebViewController\""
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Services\/TenantService.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Services\/TenantService.swift",
       "kind": "StringLiteral",
       "offset": 242,
       "length": 12,
       "value": "\"ccindex.cn\""
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Services\/TenantService.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Services\/TenantService.swift",
       "kind": "BooleanLiteral",
       "offset": 348,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Services\/TenantService.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Services\/TenantService.swift",
       "kind": "BooleanLiteral",
       "offset": 383,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Services\/TenantService.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Services\/TenantService.swift",
       "kind": "BooleanLiteral",
       "offset": 409,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/KeyChain\/KeyStoreHandler.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/KeyChain\/KeyStoreHandler.swift",
       "kind": "StringLiteral",
       "offset": 287,
       "length": 45,
       "value": "\"com.axonify.axonifylib.keychain.credentials\""
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/ChildWebChromeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 334,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/ChildWebChromeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 340,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/ChildWebChromeView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 387,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
       "kind": "StringLiteral",
       "offset": 242,
       "length": 10,
       "value": "\"Facebook\""
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
       "kind": "StringLiteral",
       "offset": 271,
       "length": 8,
       "value": "\"Google\""
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
       "kind": "StringLiteral",
       "offset": 300,
       "length": 10,
       "value": "\"LinkedIn\""
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
       "kind": "StringLiteral",
       "offset": 333,
       "length": 12,
       "value": "\"Salesforce\""
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
       "kind": "StringLiteral",
       "offset": 242,
       "length": 10,
       "value": "\"Facebook\""
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
       "kind": "StringLiteral",
       "offset": 271,
       "length": 8,
       "value": "\"Google\""
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
       "kind": "StringLiteral",
       "offset": 300,
       "length": 10,
       "value": "\"LinkedIn\""
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
       "kind": "StringLiteral",
       "offset": 333,
       "length": 12,
       "value": "\"Salesforce\""
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1757,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1915,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1951,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/JSMessage.swift",
       "kind": "StringLiteral",
-      "offset": 2305,
+      "offset": 331,
+      "length": 8,
+      "value": "\"action\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/JSMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 366,
+      "length": 6,
+      "value": "\"data\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/JSMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 817,
+      "length": 12,
+      "value": "\"oauthLogin\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/JSMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 1229,
+      "length": 18,
+      "value": "\"requestAppConfig\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/JSMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 817,
+      "length": 12,
+      "value": "\"oauthLogin\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/JSMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 1229,
+      "length": 18,
+      "value": "\"requestAppConfig\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/JSMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 1410,
+      "length": 19,
+      "value": "\"appConfigResponse\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/JSMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 1595,
+      "length": 16,
+      "value": "\"oauthAuthState\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/JSMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 1410,
+      "length": 19,
+      "value": "\"appConfigResponse\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/JSMessage.swift",
+      "kind": "StringLiteral",
+      "offset": 1595,
+      "length": 16,
+      "value": "\"oauthAuthState\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1969,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2191,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2235,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2339,
+      "length": 17,
+      "value": "\"userCredentials\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2358,
+      "length": 6,
+      "value": "\"true\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2374,
+      "length": 9,
+      "value": "\"openUrl\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2385,
+      "length": 6,
+      "value": "\"true\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2401,
+      "length": 19,
+      "value": "\"fileUploadEnabled\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2422,
+      "length": 6,
+      "value": "\"true\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2438,
+      "length": 11,
+      "value": "\"appConfig\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "kind": "Dictionary",
+      "offset": 2451,
+      "length": 232,
+      "value": "[(\"enabled\", \"true\"), (\"supportsArbitraryKeys\", \"true\")]"
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2926,
       "length": 25,
       "value": "\"supportPushNotification\""
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2332,
+      "offset": 2953,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2347,
+      "offset": 2968,
       "length": 16,
       "value": "\"isInAxonifyApp\""
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2365,
+      "offset": 2986,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2380,
+      "offset": 3001,
       "length": 20,
       "value": "\"allowChildWebViews\""
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2402,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10876,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 10907,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 1215,
-      "length": 24,
-      "value": "\"AxonifyLibXCFramework.AxonifyWebViewController\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Utilities\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 1741,
-      "length": 33,
-      "value": "\"ReachabilityChangedNotification\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Utilities\/Reachability.swift",
-      "kind": "StringLiteral",
-      "offset": 1869,
-      "length": 21,
-      "value": "\"reachabilityChanged\""
-    },
-    {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Utilities\/Reachability.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 3023,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Utilities\/Reachability.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9809,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11382,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 11413,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1215,
+      "length": 24,
+      "value": "\"AxonifyLibXCFramework.AxonifyWebViewController\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Utilities\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 1741,
+      "length": 33,
+      "value": "\"ReachabilityChangedNotification\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Utilities\/Reachability.swift",
+      "kind": "StringLiteral",
+      "offset": 1869,
+      "length": 21,
+      "value": "\"reachabilityChanged\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Utilities\/Reachability.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3023,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Utilities\/Reachability.swift",
       "kind": "BooleanLiteral",
       "offset": 4149,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Utilities\/Reachability.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Utilities\/Reachability.swift",
       "kind": "BooleanLiteral",
       "offset": 4220,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/ChildWebChromeViewController.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Utilities\/Extensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2499,
+      "length": 31,
+      "value": "\"Axonify.JSMessage.sendMessage\""
+    },
+    {
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/ChildWebChromeViewController.swift",
       "kind": "StringLiteral",
       "offset": 416,
       "length": 28,
       "value": "\"AxonifyLibXCFramework.ChildWebChromeViewController\""
     },
     {
-      "filePath": "\/Users\/mdeblois\/workspace\/mobile\/iOS\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Utilities\/LoggingService.swift",
+      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Utilities\/LoggingService.swift",
       "kind": "StringLiteral",
       "offset": 279,
       "length": 13,
