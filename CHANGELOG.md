@@ -1,4 +1,12 @@
 # AxonifyLib Changelog
+
+## 2.1.0
+
+### Functionality Changes
+- Disables link preview and menu on in-app links
+
+### API Changes
+*None*
   
 ## 2.0.0
 
