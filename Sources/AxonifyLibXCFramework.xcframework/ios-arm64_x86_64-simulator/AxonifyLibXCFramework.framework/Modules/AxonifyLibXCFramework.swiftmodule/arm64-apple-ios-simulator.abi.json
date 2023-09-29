@@ -149,6 +149,42 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TenantService",
+                "printedName": "AxonifyLibXCFramework.TenantService",
+                "usr": "s:21AxonifyLibXCFramework13TenantServiceC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TenantService",
+                "printedName": "AxonifyLibXCFramework.TenantService",
+                "usr": "s:21AxonifyLibXCFramework13TenantServiceC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21AxonifyLibXCFramework13TenantServiceC2eeoiySbAC_ACtFZ",
+            "mangledName": "$s21AxonifyLibXCFramework13TenantServiceC2eeoiySbAC_ACtFZ",
+            "moduleName": "AxonifyLibXCFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -157,6 +193,171 @@
         "moduleName": "AxonifyLibXCFramework",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AxonifyLibXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AxonifyLibXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AxonifyAuthenticationDelegate",
+        "printedName": "AxonifyAuthenticationDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "authenticate",
+            "printedName": "authenticate(sender:identityProvider:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AxonifyWebViewController",
+                "printedName": "AxonifyLibXCFramework.AxonifyWebViewController",
+                "usr": "c:@M@AxonifyLibXCFramework@objc(cs)AxonifyWebViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IdentityProvider",
+                "printedName": "AxonifyLibXCFramework.IdentityProvider",
+                "usr": "s:21AxonifyLibXCFramework16IdentityProviderV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(access: Swift.String, id: Swift.String?), Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(access: Swift.String, id: Swift.String?), Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(access: Swift.String, id: Swift.String?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21AxonifyLibXCFramework0A22AuthenticationDelegateP12authenticate6sender16identityProvider10completionyAA0A17WebViewControllerC_AA08IdentityI0Vys6ResultOySS6access_SSSg2idts5Error_pGctF",
+            "mangledName": "$s21AxonifyLibXCFramework0A22AuthenticationDelegateP12authenticate6sender16identityProvider10completionyAA0A17WebViewControllerC_AA08IdentityI0Vys6ResultOySS6access_SSSg2idts5Error_pGctF",
+            "moduleName": "AxonifyLibXCFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : AxonifyLibXCFramework.AxonifyAuthenticationDelegate>",
+            "sugared_genericSig": "<Self where Self : AxonifyLibXCFramework.AxonifyAuthenticationDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearAuthState",
+            "printedName": "clearAuthState(sender:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AxonifyWebViewController",
+                "printedName": "AxonifyLibXCFramework.AxonifyWebViewController",
+                "usr": "c:@M@AxonifyLibXCFramework@objc(cs)AxonifyWebViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21AxonifyLibXCFramework0A22AuthenticationDelegateP14clearAuthState6senderyAA0A17WebViewControllerC_tF",
+            "mangledName": "$s21AxonifyLibXCFramework0A22AuthenticationDelegateP14clearAuthState6senderyAA0A17WebViewControllerC_tF",
+            "moduleName": "AxonifyLibXCFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : AxonifyLibXCFramework.AxonifyAuthenticationDelegate>",
+            "sugared_genericSig": "<Self where Self : AxonifyLibXCFramework.AxonifyAuthenticationDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:21AxonifyLibXCFramework0A22AuthenticationDelegateP",
+        "mangledName": "$s21AxonifyLibXCFramework0A22AuthenticationDelegateP",
+        "moduleName": "AxonifyLibXCFramework",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -185,303 +386,6 @@
         "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "AxonifyLibXCFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AxonifyLibXCFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "OAuthProviderType",
-        "printedName": "OAuthProviderType",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "Facebook",
-            "printedName": "Facebook",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AxonifyLibXCFramework.OAuthProviderType.Type) -> AxonifyLibXCFramework.OAuthProviderType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OAuthProviderType",
-                    "printedName": "AxonifyLibXCFramework.OAuthProviderType",
-                    "usr": "s:21AxonifyLibXCFramework17OAuthProviderTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AxonifyLibXCFramework.OAuthProviderType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "OAuthProviderType",
-                        "printedName": "AxonifyLibXCFramework.OAuthProviderType",
-                        "usr": "s:21AxonifyLibXCFramework17OAuthProviderTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:21AxonifyLibXCFramework17OAuthProviderTypeO8FacebookyA2CmF",
-            "mangledName": "$s21AxonifyLibXCFramework17OAuthProviderTypeO8FacebookyA2CmF",
-            "moduleName": "AxonifyLibXCFramework"
-          },
-          {
-            "kind": "Var",
-            "name": "Google",
-            "printedName": "Google",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AxonifyLibXCFramework.OAuthProviderType.Type) -> AxonifyLibXCFramework.OAuthProviderType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OAuthProviderType",
-                    "printedName": "AxonifyLibXCFramework.OAuthProviderType",
-                    "usr": "s:21AxonifyLibXCFramework17OAuthProviderTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AxonifyLibXCFramework.OAuthProviderType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "OAuthProviderType",
-                        "printedName": "AxonifyLibXCFramework.OAuthProviderType",
-                        "usr": "s:21AxonifyLibXCFramework17OAuthProviderTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:21AxonifyLibXCFramework17OAuthProviderTypeO6GoogleyA2CmF",
-            "mangledName": "$s21AxonifyLibXCFramework17OAuthProviderTypeO6GoogleyA2CmF",
-            "moduleName": "AxonifyLibXCFramework"
-          },
-          {
-            "kind": "Var",
-            "name": "LinkedIn",
-            "printedName": "LinkedIn",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AxonifyLibXCFramework.OAuthProviderType.Type) -> AxonifyLibXCFramework.OAuthProviderType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OAuthProviderType",
-                    "printedName": "AxonifyLibXCFramework.OAuthProviderType",
-                    "usr": "s:21AxonifyLibXCFramework17OAuthProviderTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AxonifyLibXCFramework.OAuthProviderType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "OAuthProviderType",
-                        "printedName": "AxonifyLibXCFramework.OAuthProviderType",
-                        "usr": "s:21AxonifyLibXCFramework17OAuthProviderTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:21AxonifyLibXCFramework17OAuthProviderTypeO8LinkedInyA2CmF",
-            "mangledName": "$s21AxonifyLibXCFramework17OAuthProviderTypeO8LinkedInyA2CmF",
-            "moduleName": "AxonifyLibXCFramework"
-          },
-          {
-            "kind": "Var",
-            "name": "Salesforce",
-            "printedName": "Salesforce",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AxonifyLibXCFramework.OAuthProviderType.Type) -> AxonifyLibXCFramework.OAuthProviderType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OAuthProviderType",
-                    "printedName": "AxonifyLibXCFramework.OAuthProviderType",
-                    "usr": "s:21AxonifyLibXCFramework17OAuthProviderTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AxonifyLibXCFramework.OAuthProviderType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "OAuthProviderType",
-                        "printedName": "AxonifyLibXCFramework.OAuthProviderType",
-                        "usr": "s:21AxonifyLibXCFramework17OAuthProviderTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:21AxonifyLibXCFramework17OAuthProviderTypeO10SalesforceyA2CmF",
-            "mangledName": "$s21AxonifyLibXCFramework17OAuthProviderTypeO10SalesforceyA2CmF",
-            "moduleName": "AxonifyLibXCFramework"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AxonifyLibXCFramework.OAuthProviderType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OAuthProviderType",
-                    "printedName": "AxonifyLibXCFramework.OAuthProviderType",
-                    "usr": "s:21AxonifyLibXCFramework17OAuthProviderTypeO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:21AxonifyLibXCFramework17OAuthProviderTypeO8rawValueACSgSS_tcfc",
-            "mangledName": "$s21AxonifyLibXCFramework17OAuthProviderTypeO8rawValueACSgSS_tcfc",
-            "moduleName": "AxonifyLibXCFramework",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:21AxonifyLibXCFramework17OAuthProviderTypeO8rawValueSSvp",
-            "mangledName": "$s21AxonifyLibXCFramework17OAuthProviderTypeO8rawValueSSvp",
-            "moduleName": "AxonifyLibXCFramework",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:21AxonifyLibXCFramework17OAuthProviderTypeO8rawValueSSvg",
-                "mangledName": "$s21AxonifyLibXCFramework17OAuthProviderTypeO8rawValueSSvg",
-                "moduleName": "AxonifyLibXCFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:21AxonifyLibXCFramework17OAuthProviderTypeO",
-        "mangledName": "$s21AxonifyLibXCFramework17OAuthProviderTypeO",
-        "moduleName": "AxonifyLibXCFramework",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "enumRawTypeName": "String",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          }
-        ]
       },
       {
         "kind": "Import",
@@ -688,118 +592,6 @@
         "declKind": "Protocol",
         "usr": "s:21AxonifyLibXCFramework0A25WebViewControllerDelegateP",
         "mangledName": "$s21AxonifyLibXCFramework0A25WebViewControllerDelegateP",
-        "moduleName": "AxonifyLibXCFramework",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "AxonifyOAuthDelegate",
-        "printedName": "AxonifyOAuthDelegate",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "getSupportedOAuth2Providers",
-            "printedName": "getSupportedOAuth2Providers(sender:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[AxonifyLibXCFramework.OAuthProviderType]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OAuthProviderType",
-                    "printedName": "AxonifyLibXCFramework.OAuthProviderType",
-                    "usr": "s:21AxonifyLibXCFramework17OAuthProviderTypeO"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AxonifyWebViewController",
-                "printedName": "AxonifyLibXCFramework.AxonifyWebViewController",
-                "usr": "c:@M@AxonifyLibXCFramework@objc(cs)AxonifyWebViewController"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:21AxonifyLibXCFramework0A13OAuthDelegateP27getSupportedOAuth2Providers6senderSayAA0D12ProviderTypeOGAA0A17WebViewControllerC_tF",
-            "mangledName": "$s21AxonifyLibXCFramework0A13OAuthDelegateP27getSupportedOAuth2Providers6senderSayAA0D12ProviderTypeOGAA0A17WebViewControllerC_tF",
-            "moduleName": "AxonifyLibXCFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : AxonifyLibXCFramework.AxonifyOAuthDelegate>",
-            "sugared_genericSig": "<Self where Self : AxonifyLibXCFramework.AxonifyOAuthDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "authorizeOAuth",
-            "printedName": "authorizeOAuth(sender:oauthProviderType:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AxonifyWebViewController",
-                "printedName": "AxonifyLibXCFramework.AxonifyWebViewController",
-                "usr": "c:@M@AxonifyLibXCFramework@objc(cs)AxonifyWebViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "OAuthProviderType",
-                "printedName": "AxonifyLibXCFramework.OAuthProviderType",
-                "usr": "s:21AxonifyLibXCFramework17OAuthProviderTypeO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:21AxonifyLibXCFramework0A13OAuthDelegateP09authorizeD06sender17oauthProviderTypeyAA0A17WebViewControllerC_AA0diJ0OtF",
-            "mangledName": "$s21AxonifyLibXCFramework0A13OAuthDelegateP09authorizeD06sender17oauthProviderTypeyAA0A17WebViewControllerC_AA0diJ0OtF",
-            "moduleName": "AxonifyLibXCFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : AxonifyLibXCFramework.AxonifyOAuthDelegate>",
-            "sugared_genericSig": "<Self where Self : AxonifyLibXCFramework.AxonifyOAuthDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "clearAuthState",
-            "printedName": "clearAuthState(sender:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AxonifyWebViewController",
-                "printedName": "AxonifyLibXCFramework.AxonifyWebViewController",
-                "usr": "c:@M@AxonifyLibXCFramework@objc(cs)AxonifyWebViewController"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:21AxonifyLibXCFramework0A13OAuthDelegateP14clearAuthState6senderyAA0A17WebViewControllerC_tF",
-            "mangledName": "$s21AxonifyLibXCFramework0A13OAuthDelegateP14clearAuthState6senderyAA0A17WebViewControllerC_tF",
-            "moduleName": "AxonifyLibXCFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : AxonifyLibXCFramework.AxonifyOAuthDelegate>",
-            "sugared_genericSig": "<Self where Self : AxonifyLibXCFramework.AxonifyOAuthDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:21AxonifyLibXCFramework0A13OAuthDelegateP",
-        "mangledName": "$s21AxonifyLibXCFramework0A13OAuthDelegateP",
         "moduleName": "AxonifyLibXCFramework",
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
@@ -1092,18 +884,18 @@
           },
           {
             "kind": "Var",
-            "name": "oAuthDelegate",
-            "printedName": "oAuthDelegate",
+            "name": "authenticationDelegate",
+            "printedName": "authenticationDelegate",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "AxonifyLibXCFramework.AxonifyOAuthDelegate?"
+                "printedName": "AxonifyLibXCFramework.AxonifyAuthenticationDelegate?"
               }
             ],
             "declKind": "Var",
-            "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC13oAuthDelegateAA0a5OAuthH0_pSgvp",
-            "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC13oAuthDelegateAA0a5OAuthH0_pSgvp",
+            "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC22authenticationDelegateAA0a14AuthenticationH0_pSgvp",
+            "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC22authenticationDelegateAA0a14AuthenticationH0_pSgvp",
             "moduleName": "AxonifyLibXCFramework",
             "declAttributes": [
               "Custom",
@@ -1123,21 +915,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "AxonifyLibXCFramework.AxonifyOAuthDelegate?",
+                    "printedName": "AxonifyLibXCFramework.AxonifyAuthenticationDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "AxonifyOAuthDelegate",
-                        "printedName": "AxonifyLibXCFramework.AxonifyOAuthDelegate",
-                        "usr": "s:21AxonifyLibXCFramework0A13OAuthDelegateP"
+                        "name": "AxonifyAuthenticationDelegate",
+                        "printedName": "AxonifyLibXCFramework.AxonifyAuthenticationDelegate",
+                        "usr": "s:21AxonifyLibXCFramework0A22AuthenticationDelegateP"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC13oAuthDelegateAA0a5OAuthH0_pSgvg",
-                "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC13oAuthDelegateAA0a5OAuthH0_pSgvg",
+                "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC22authenticationDelegateAA0a14AuthenticationH0_pSgvg",
+                "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC22authenticationDelegateAA0a14AuthenticationH0_pSgvg",
                 "moduleName": "AxonifyLibXCFramework",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1155,21 +947,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "AxonifyLibXCFramework.AxonifyOAuthDelegate?",
+                    "printedName": "AxonifyLibXCFramework.AxonifyAuthenticationDelegate?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "AxonifyOAuthDelegate",
-                        "printedName": "AxonifyLibXCFramework.AxonifyOAuthDelegate",
-                        "usr": "s:21AxonifyLibXCFramework0A13OAuthDelegateP"
+                        "name": "AxonifyAuthenticationDelegate",
+                        "printedName": "AxonifyLibXCFramework.AxonifyAuthenticationDelegate",
+                        "usr": "s:21AxonifyLibXCFramework0A22AuthenticationDelegateP"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC13oAuthDelegateAA0a5OAuthH0_pSgvs",
-                "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC13oAuthDelegateAA0a5OAuthH0_pSgvs",
+                "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC22authenticationDelegateAA0a14AuthenticationH0_pSgvs",
+                "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC22authenticationDelegateAA0a14AuthenticationH0_pSgvs",
                 "moduleName": "AxonifyLibXCFramework",
                 "implicit": true,
                 "accessorKind": "set"
@@ -1186,8 +978,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC13oAuthDelegateAA0a5OAuthH0_pSgvM",
-                "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC13oAuthDelegateAA0a5OAuthH0_pSgvM",
+                "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC22authenticationDelegateAA0a14AuthenticationH0_pSgvM",
+                "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC22authenticationDelegateAA0a14AuthenticationH0_pSgvM",
                 "moduleName": "AxonifyLibXCFramework",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -1638,94 +1430,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(splashScreenColor:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AxonifyWebViewController",
-                "printedName": "AxonifyLibXCFramework.AxonifyWebViewController",
-                "usr": "c:@M@AxonifyLibXCFramework@objc(cs)AxonifyWebViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "hasDefaultArg": true,
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC17splashScreenColorACSo7UIColorC_tcfc",
-            "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC17splashScreenColorACSo7UIColorC_tcfc",
-            "moduleName": "AxonifyLibXCFramework",
-            "declAttributes": [
-              "Custom",
-              "Convenience",
-              "AccessControl"
-            ],
-            "init_kind": "Convenience"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(splashScreenColor:options:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AxonifyWebViewController",
-                "printedName": "AxonifyLibXCFramework.AxonifyWebViewController",
-                "usr": "c:@M@AxonifyLibXCFramework@objc(cs)AxonifyWebViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "hasDefaultArg": true,
-                "usr": "c:objc(cs)UIColor"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC17splashScreenColor7optionsACSo7UIColorC_SDySSypGSgtcfc",
-            "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC17splashScreenColor7optionsACSo7UIColorC_SDySSypGSgtcfc",
-            "moduleName": "AxonifyLibXCFramework",
-            "declAttributes": [
-              "Custom",
-              "Convenience",
-              "AccessControl"
-            ],
-            "init_kind": "Convenience"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(delegate:splashScreenColor:)",
+            "printedName": "init(delegate:authenticationDelegate:pushNotificationDelegate:multiTenantDelegate:appReviewDelegate:splashScreenColor:options:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1745,278 +1450,22 @@
                     "usr": "s:21AxonifyLibXCFramework0A25WebViewControllerDelegateP"
                   }
                 ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
                 "hasDefaultArg": true,
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC8delegate17splashScreenColorAcA0adeF8Delegate_pSg_So7UIColorCtcfc",
-            "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC8delegate17splashScreenColorAcA0adeF8Delegate_pSg_So7UIColorCtcfc",
-            "moduleName": "AxonifyLibXCFramework",
-            "declAttributes": [
-              "Custom",
-              "Convenience",
-              "AccessControl"
-            ],
-            "init_kind": "Convenience"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(delegate:splashScreenColor:options:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AxonifyWebViewController",
-                "printedName": "AxonifyLibXCFramework.AxonifyWebViewController",
-                "usr": "c:@M@AxonifyLibXCFramework@objc(cs)AxonifyWebViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AxonifyLibXCFramework.AxonifyWebViewControllerDelegate?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AxonifyWebViewControllerDelegate",
-                    "printedName": "AxonifyLibXCFramework.AxonifyWebViewControllerDelegate",
-                    "usr": "s:21AxonifyLibXCFramework0A25WebViewControllerDelegateP"
-                  }
-                ],
                 "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
+                "name": "Optional",
+                "printedName": "AxonifyLibXCFramework.AxonifyAuthenticationDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AxonifyAuthenticationDelegate",
+                    "printedName": "AxonifyLibXCFramework.AxonifyAuthenticationDelegate",
+                    "usr": "s:21AxonifyLibXCFramework0A22AuthenticationDelegateP"
+                  }
+                ],
                 "hasDefaultArg": true,
-                "usr": "c:objc(cs)UIColor"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC8delegate17splashScreenColor7optionsAcA0adeF8Delegate_pSg_So7UIColorCSDySSypGSgtcfc",
-            "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC8delegate17splashScreenColor7optionsAcA0adeF8Delegate_pSg_So7UIColorCSDySSypGSgtcfc",
-            "moduleName": "AxonifyLibXCFramework",
-            "declAttributes": [
-              "Custom",
-              "Convenience",
-              "AccessControl"
-            ],
-            "init_kind": "Convenience"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(delegate:oAuthDelegate:splashScreenColor:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AxonifyWebViewController",
-                "printedName": "AxonifyLibXCFramework.AxonifyWebViewController",
-                "usr": "c:@M@AxonifyLibXCFramework@objc(cs)AxonifyWebViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AxonifyLibXCFramework.AxonifyWebViewControllerDelegate?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AxonifyWebViewControllerDelegate",
-                    "printedName": "AxonifyLibXCFramework.AxonifyWebViewControllerDelegate",
-                    "usr": "s:21AxonifyLibXCFramework0A25WebViewControllerDelegateP"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AxonifyLibXCFramework.AxonifyOAuthDelegate?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AxonifyOAuthDelegate",
-                    "printedName": "AxonifyLibXCFramework.AxonifyOAuthDelegate",
-                    "usr": "s:21AxonifyLibXCFramework0A13OAuthDelegateP"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "hasDefaultArg": true,
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC8delegate13oAuthDelegate17splashScreenColorAcA0adefI0_pSg_AA0a5OAuthI0_pSgSo7UIColorCtcfc",
-            "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC8delegate13oAuthDelegate17splashScreenColorAcA0adefI0_pSg_AA0a5OAuthI0_pSgSo7UIColorCtcfc",
-            "moduleName": "AxonifyLibXCFramework",
-            "declAttributes": [
-              "Custom",
-              "Convenience",
-              "AccessControl"
-            ],
-            "init_kind": "Convenience"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(delegate:oAuthDelegate:splashScreenColor:options:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AxonifyWebViewController",
-                "printedName": "AxonifyLibXCFramework.AxonifyWebViewController",
-                "usr": "c:@M@AxonifyLibXCFramework@objc(cs)AxonifyWebViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AxonifyLibXCFramework.AxonifyWebViewControllerDelegate?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AxonifyWebViewControllerDelegate",
-                    "printedName": "AxonifyLibXCFramework.AxonifyWebViewControllerDelegate",
-                    "usr": "s:21AxonifyLibXCFramework0A25WebViewControllerDelegateP"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AxonifyLibXCFramework.AxonifyOAuthDelegate?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AxonifyOAuthDelegate",
-                    "printedName": "AxonifyLibXCFramework.AxonifyOAuthDelegate",
-                    "usr": "s:21AxonifyLibXCFramework0A13OAuthDelegateP"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "hasDefaultArg": true,
-                "usr": "c:objc(cs)UIColor"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC8delegate13oAuthDelegate17splashScreenColor7optionsAcA0adefI0_pSg_AA0a5OAuthI0_pSgSo7UIColorCSDySSypGSgtcfc",
-            "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC8delegate13oAuthDelegate17splashScreenColor7optionsAcA0adefI0_pSg_AA0a5OAuthI0_pSgSo7UIColorCSDySSypGSgtcfc",
-            "moduleName": "AxonifyLibXCFramework",
-            "declAttributes": [
-              "Custom",
-              "Convenience",
-              "AccessControl"
-            ],
-            "init_kind": "Convenience"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(delegate:oAuthDelegate:pushNotificationDelegate:multiTenantDelegate:appReviewDelegate:splashScreenColor:options:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AxonifyWebViewController",
-                "printedName": "AxonifyLibXCFramework.AxonifyWebViewController",
-                "usr": "c:@M@AxonifyLibXCFramework@objc(cs)AxonifyWebViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AxonifyLibXCFramework.AxonifyWebViewControllerDelegate?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AxonifyWebViewControllerDelegate",
-                    "printedName": "AxonifyLibXCFramework.AxonifyWebViewControllerDelegate",
-                    "usr": "s:21AxonifyLibXCFramework0A25WebViewControllerDelegateP"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AxonifyLibXCFramework.AxonifyOAuthDelegate?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AxonifyOAuthDelegate",
-                    "printedName": "AxonifyLibXCFramework.AxonifyOAuthDelegate",
-                    "usr": "s:21AxonifyLibXCFramework0A13OAuthDelegateP"
-                  }
-                ],
                 "usr": "s:Sq"
               },
               {
@@ -2031,6 +1480,7 @@
                     "usr": "s:21AxonifyLibXCFramework0A24PushNotificationDelegateP"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -2045,6 +1495,7 @@
                     "usr": "s:21AxonifyLibXCFramework0A19MultiTenantDelegateP"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -2059,6 +1510,7 @@
                     "usr": "s:21AxonifyLibXCFramework0A17AppReviewDelegateP"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -2093,12 +1545,13 @@
                     "usr": "s:SD"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC8delegate13oAuthDelegate016pushNotificationI0011multiTenantI009appReviewI017splashScreenColor7optionsAcA0adefI0_pSg_AA0a5OAuthI0_pSgAA0a4PushkI0_pSgAA0a5MultimI0_pSgAA0a3AppoI0_pSgSo7UIColorCSDySSypGSgtcfc",
-            "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC8delegate13oAuthDelegate016pushNotificationI0011multiTenantI009appReviewI017splashScreenColor7optionsAcA0adefI0_pSg_AA0a5OAuthI0_pSgAA0a4PushkI0_pSgAA0a5MultimI0_pSgAA0a3AppoI0_pSgSo7UIColorCSDySSypGSgtcfc",
+            "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC8delegate22authenticationDelegate016pushNotificationI0011multiTenantI009appReviewI017splashScreenColor7optionsAcA0adefI0_pSg_AA0a14AuthenticationI0_pSgAA0a4PushkI0_pSgAA0a5MultimI0_pSgAA0a3AppoI0_pSgSo7UIColorCSDySSypGSgtcfc",
+            "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC8delegate22authenticationDelegate016pushNotificationI0011multiTenantI009appReviewI017splashScreenColor7optionsAcA0adefI0_pSg_AA0a14AuthenticationI0_pSgAA0a4PushkI0_pSgAA0a5MultimI0_pSgAA0a3AppoI0_pSgSo7UIColorCSDySSypGSgtcfc",
             "moduleName": "AxonifyLibXCFramework",
             "declAttributes": [
               "Custom",
@@ -2465,68 +1918,6 @@
             "declKind": "Func",
             "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC19appWillResignActiveyyF",
             "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC19appWillResignActiveyyF",
-            "moduleName": "AxonifyLibXCFramework",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "accessTokenLoaded",
-            "printedName": "accessTokenLoaded(accessToken:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC17accessTokenLoaded0gH0ySSSg_tF",
-            "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC17accessTokenLoaded0gH0ySSSg_tF",
-            "moduleName": "AxonifyLibXCFramework",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "errorLoadingAccessToken",
-            "printedName": "errorLoadingAccessToken(error:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Error",
-                "printedName": "Swift.Error",
-                "usr": "s:s5ErrorP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:21AxonifyLibXCFramework0A17WebViewControllerC23errorLoadingAccessToken0G0ys5Error_p_tF",
-            "mangledName": "$s21AxonifyLibXCFramework0A17WebViewControllerC23errorLoadingAccessToken0G0ys5Error_p_tF",
             "moduleName": "AxonifyLibXCFramework",
             "declAttributes": [
               "Custom",
@@ -4255,7 +3646,7 @@
           {
             "kind": "Function",
             "name": "set",
-            "printedName": "set(data:forKey:)",
+            "printedName": "set(data:forKey:service:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4287,14 +3678,30 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:21AxonifyLibXCFramework14KeychainHelperC3set4data6forKeySbSDySSypG_SStF",
-            "mangledName": "$s21AxonifyLibXCFramework14KeychainHelperC3set4data6forKeySbSDySSypG_SStF",
+            "usr": "s:21AxonifyLibXCFramework14KeychainHelperC3set4data6forKey7serviceSbSDySSypG_S2SSgtF",
+            "mangledName": "$s21AxonifyLibXCFramework14KeychainHelperC3set4data6forKey7serviceSbSDySSypG_S2SSgtF",
             "moduleName": "AxonifyLibXCFramework",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4343,6 +3750,34 @@
             "moduleName": "AxonifyLibXCFramework",
             "declAttributes": [
               "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteAll",
+            "printedName": "deleteAll(service:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21AxonifyLibXCFramework14KeychainHelperC9deleteAll7services5Int32VSS_tF",
+            "mangledName": "$s21AxonifyLibXCFramework14KeychainHelperC9deleteAll7services5Int32VSS_tF",
+            "moduleName": "AxonifyLibXCFramework",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4402,6 +3837,702 @@
         "moduleName": "AxonifyLibXCFramework",
         "declAttributes": [
           "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AxonifyLibXCFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IdentityProvider",
+        "printedName": "IdentityProvider",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "endpoint",
+            "printedName": "endpoint",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Endpoint",
+                "printedName": "AxonifyLibXCFramework.IdentityProvider.Endpoint",
+                "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8EndpointO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8endpointAC8EndpointOvp",
+            "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV8endpointAC8EndpointOvp",
+            "moduleName": "AxonifyLibXCFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Endpoint",
+                    "printedName": "AxonifyLibXCFramework.IdentityProvider.Endpoint",
+                    "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8EndpointO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8endpointAC8EndpointOvg",
+                "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV8endpointAC8EndpointOvg",
+                "moduleName": "AxonifyLibXCFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "clientId",
+            "printedName": "clientId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8clientIdSSvp",
+            "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV8clientIdSSvp",
+            "moduleName": "AxonifyLibXCFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8clientIdSSvg",
+                "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV8clientIdSSvg",
+                "moduleName": "AxonifyLibXCFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "redirect",
+            "printedName": "redirect",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8redirect10Foundation3URLVvp",
+            "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV8redirect10Foundation3URLVvp",
+            "moduleName": "AxonifyLibXCFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8redirect10Foundation3URLVvg",
+                "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV8redirect10Foundation3URLVvg",
+                "moduleName": "AxonifyLibXCFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "scopes",
+            "printedName": "scopes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21AxonifyLibXCFramework16IdentityProviderV6scopesSaySSGvp",
+            "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV6scopesSaySSGvp",
+            "moduleName": "AxonifyLibXCFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21AxonifyLibXCFramework16IdentityProviderV6scopesSaySSGvg",
+                "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV6scopesSaySSGvg",
+                "moduleName": "AxonifyLibXCFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21AxonifyLibXCFramework16IdentityProviderV4nameSSvp",
+            "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV4nameSSvp",
+            "moduleName": "AxonifyLibXCFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21AxonifyLibXCFramework16IdentityProviderV4nameSSvg",
+                "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV4nameSSvg",
+                "moduleName": "AxonifyLibXCFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(name:endpoint:clientId:redirect:scopes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IdentityProvider",
+                "printedName": "AxonifyLibXCFramework.IdentityProvider",
+                "usr": "s:21AxonifyLibXCFramework16IdentityProviderV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Endpoint",
+                "printedName": "AxonifyLibXCFramework.IdentityProvider.Endpoint",
+                "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8EndpointO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21AxonifyLibXCFramework16IdentityProviderV4name8endpoint8clientId8redirect6scopesACSS_AC8EndpointOSS10Foundation3URLVSaySSGtcfc",
+            "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV4name8endpoint8clientId8redirect6scopesACSS_AC8EndpointOSS10Foundation3URLVSaySSGtcfc",
+            "moduleName": "AxonifyLibXCFramework",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21AxonifyLibXCFramework16IdentityProviderV9hashValueSivp",
+            "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV9hashValueSivp",
+            "moduleName": "AxonifyLibXCFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21AxonifyLibXCFramework16IdentityProviderV9hashValueSivg",
+                "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV9hashValueSivg",
+                "moduleName": "AxonifyLibXCFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21AxonifyLibXCFramework16IdentityProviderV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV4hash4intoys6HasherVz_tF",
+            "moduleName": "AxonifyLibXCFramework",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IdentityProvider",
+                "printedName": "AxonifyLibXCFramework.IdentityProvider",
+                "usr": "s:21AxonifyLibXCFramework16IdentityProviderV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IdentityProvider",
+                "printedName": "AxonifyLibXCFramework.IdentityProvider",
+                "usr": "s:21AxonifyLibXCFramework16IdentityProviderV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21AxonifyLibXCFramework16IdentityProviderV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV2eeoiySbAC_ACtFZ",
+            "moduleName": "AxonifyLibXCFramework",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Endpoint",
+            "printedName": "Endpoint",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "discovery",
+                "printedName": "discovery",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AxonifyLibXCFramework.IdentityProvider.Endpoint.Type) -> (Foundation.URL) -> AxonifyLibXCFramework.IdentityProvider.Endpoint",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Foundation.URL) -> AxonifyLibXCFramework.IdentityProvider.Endpoint",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Endpoint",
+                            "printedName": "AxonifyLibXCFramework.IdentityProvider.Endpoint",
+                            "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8EndpointO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URL",
+                            "printedName": "Foundation.URL",
+                            "usr": "s:10Foundation3URLV"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AxonifyLibXCFramework.IdentityProvider.Endpoint.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Endpoint",
+                            "printedName": "AxonifyLibXCFramework.IdentityProvider.Endpoint",
+                            "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8EndpointO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8EndpointO9discoveryyAE10Foundation3URLVcAEmF",
+                "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV8EndpointO9discoveryyAE10Foundation3URLVcAEmF",
+                "moduleName": "AxonifyLibXCFramework",
+                "declAttributes": [
+                  "RawDocComment"
+                ],
+                "fixedbinaryorder": 0
+              },
+              {
+                "kind": "Var",
+                "name": "fixed",
+                "printedName": "fixed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AxonifyLibXCFramework.IdentityProvider.Endpoint.Type) -> (Foundation.URL, Foundation.URL) -> AxonifyLibXCFramework.IdentityProvider.Endpoint",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Foundation.URL, Foundation.URL) -> AxonifyLibXCFramework.IdentityProvider.Endpoint",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Endpoint",
+                            "printedName": "AxonifyLibXCFramework.IdentityProvider.Endpoint",
+                            "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8EndpointO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(authorization: Foundation.URL, token: Foundation.URL)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "URL",
+                                "printedName": "Foundation.URL",
+                                "usr": "s:10Foundation3URLV"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "URL",
+                                "printedName": "Foundation.URL",
+                                "usr": "s:10Foundation3URLV"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AxonifyLibXCFramework.IdentityProvider.Endpoint.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Endpoint",
+                            "printedName": "AxonifyLibXCFramework.IdentityProvider.Endpoint",
+                            "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8EndpointO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8EndpointO5fixedyAE10Foundation3URLV_AItcAEmF",
+                "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV8EndpointO5fixedyAE10Foundation3URLV_AItcAEmF",
+                "moduleName": "AxonifyLibXCFramework",
+                "declAttributes": [
+                  "RawDocComment"
+                ],
+                "fixedbinaryorder": 1
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8EndpointO9hashValueSivp",
+                "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV8EndpointO9hashValueSivp",
+                "moduleName": "AxonifyLibXCFramework",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8EndpointO9hashValueSivg",
+                    "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV8EndpointO9hashValueSivg",
+                    "moduleName": "AxonifyLibXCFramework",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8EndpointO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV8EndpointO4hash4intoys6HasherVz_tF",
+                "moduleName": "AxonifyLibXCFramework",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Endpoint",
+                    "printedName": "AxonifyLibXCFramework.IdentityProvider.Endpoint",
+                    "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8EndpointO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Endpoint",
+                    "printedName": "AxonifyLibXCFramework.IdentityProvider.Endpoint",
+                    "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8EndpointO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8EndpointO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV8EndpointO2eeoiySbAE_AEtFZ",
+                "moduleName": "AxonifyLibXCFramework",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:21AxonifyLibXCFramework16IdentityProviderV8EndpointO",
+            "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV8EndpointO",
+            "moduleName": "AxonifyLibXCFramework",
+            "declAttributes": [
+              "AccessControl",
+              "Frozen",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "isEnumExhaustive": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:21AxonifyLibXCFramework16IdentityProviderV",
+        "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV",
+        "moduleName": "AxonifyLibXCFramework",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
         ]
       },
       {
@@ -5175,7 +5306,7 @@
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/BaseWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 724,
+      "offset": 631,
       "length": 21,
       "value": "\"AxonifyLibXCFramework.BaseWebViewController\""
     },
@@ -5234,62 +5365,6 @@
       "offset": 387,
       "length": 2,
       "value": "30"
-    },
-    {
-      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 242,
-      "length": 10,
-      "value": "\"Facebook\""
-    },
-    {
-      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 271,
-      "length": 8,
-      "value": "\"Google\""
-    },
-    {
-      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 300,
-      "length": 10,
-      "value": "\"LinkedIn\""
-    },
-    {
-      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 333,
-      "length": 12,
-      "value": "\"Salesforce\""
-    },
-    {
-      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 242,
-      "length": 10,
-      "value": "\"Facebook\""
-    },
-    {
-      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 271,
-      "length": 8,
-      "value": "\"Google\""
-    },
-    {
-      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 300,
-      "length": 10,
-      "value": "\"LinkedIn\""
-    },
-    {
-      "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/OAuth\/OAuthHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 333,
-      "length": 12,
-      "value": "\"Salesforce\""
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/WebView\/JSMessage.swift",
@@ -5364,147 +5439,147 @@
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1969,
+      "offset": 1686,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2191,
+      "offset": 1908,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2235,
+      "offset": 1952,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2339,
+      "offset": 2056,
       "length": 17,
       "value": "\"userCredentials\""
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2358,
+      "offset": 2075,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2374,
+      "offset": 2091,
       "length": 9,
       "value": "\"openUrl\""
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2385,
+      "offset": 2102,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2401,
+      "offset": 2118,
       "length": 19,
       "value": "\"fileUploadEnabled\""
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2422,
+      "offset": 2139,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2438,
+      "offset": 2155,
       "length": 11,
       "value": "\"appConfig\""
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "Dictionary",
-      "offset": 2451,
+      "offset": 2168,
       "length": 232,
       "value": "[(\"enabled\", \"true\"), (\"supportsArbitraryKeys\", \"true\")]"
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2926,
+      "offset": 2643,
       "length": 25,
       "value": "\"supportPushNotification\""
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2953,
+      "offset": 2670,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2968,
+      "offset": 2685,
       "length": 16,
       "value": "\"isInAxonifyApp\""
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2986,
+      "offset": 2703,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3001,
+      "offset": 2718,
       "length": 20,
       "value": "\"allowChildWebViews\""
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3023,
+      "offset": 2740,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9809,
+      "offset": 7577,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11382,
+      "offset": 8880,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 11413,
+      "offset": 8911,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/AxonifyWebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1215,
+      "offset": 914,
       "length": 24,
       "value": "\"AxonifyLibXCFramework.AxonifyWebViewController\""
     },

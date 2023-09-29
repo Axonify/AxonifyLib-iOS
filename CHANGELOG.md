@@ -1,5 +1,17 @@
 # AxonifyLib Changelog
 
+## 3.0.0
+
+### Functionality Changes
+- Support for login using OpenID Connect (configured in Axonify AdminZone) if the new `AxonifyAuthenticationDelegate` is implemented.
+
+### API Changes
+- `AxonifyOAuthDelegate` has been removed and replaced with `AxonifyAuthenticationDelegate`
+    - The `AxonifyWebViewController` `accessTokenLoaded(accessToken:)` and `errorLoadingAccessToken(error:)` methods have been removed, in favour of a `completion` callback using `Result` types in the new `AxonifyAuthenticationDelegate.authenticate(sender:identityProvider:completion:)` method.
+    - `OAuthProviderType` has been removed. The new equivalent is `IdentityProvider`, which provides parameters for authenticating with an OpenID Connect identity provider. 
+- `AxonifyWebViewController` initializers have been simplified to a single initializer with default parameter values.
+    - All existing initializer combinations are still supported, there should be no behaviour changes as a result of this change.
+
 ## 2.1.0
 
 ### Functionality Changes

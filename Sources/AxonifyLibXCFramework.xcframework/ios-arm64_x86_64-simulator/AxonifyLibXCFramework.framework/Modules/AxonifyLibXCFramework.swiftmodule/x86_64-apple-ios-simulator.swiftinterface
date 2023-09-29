@@ -20,26 +20,18 @@ public class TenantService {
   public func getUrlStringForTraining() -> Swift.String?
   @objc deinit
 }
-public enum OAuthProviderType : Swift.String, Swift.Codable {
-  case Facebook
-  case Google
-  case LinkedIn
-  case Salesforce
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
+extension AxonifyLibXCFramework.TenantService : Swift.Equatable {
+  public static func == (lhs: AxonifyLibXCFramework.TenantService, rhs: AxonifyLibXCFramework.TenantService) -> Swift.Bool
+}
+public protocol AxonifyAuthenticationDelegate : AnyObject {
+  typealias Tokens = (access: Swift.String, id: Swift.String?)
+  func authenticate(sender: AxonifyLibXCFramework.AxonifyWebViewController, identityProvider: AxonifyLibXCFramework.IdentityProvider, completion: @escaping ((Swift.Result<Self.Tokens, Swift.Error>) -> Swift.Void))
+  func clearAuthState(sender: AxonifyLibXCFramework.AxonifyWebViewController)
 }
 public protocol AxonifyWebViewControllerDelegate : AnyObject {
   func readyToLoad(sender: AxonifyLibXCFramework.AxonifyWebViewController)
   func authenticationRequired(sender: AxonifyLibXCFramework.AxonifyWebViewController)
   func axonifyError(sender: AxonifyLibXCFramework.AxonifyWebViewController, error: AxonifyLibXCFramework.AxonifyError)
-}
-public protocol AxonifyOAuthDelegate : AnyObject {
-  func getSupportedOAuth2Providers(sender: AxonifyLibXCFramework.AxonifyWebViewController) -> [AxonifyLibXCFramework.OAuthProviderType]
-  func authorizeOAuth(sender: AxonifyLibXCFramework.AxonifyWebViewController, oauthProviderType: AxonifyLibXCFramework.OAuthProviderType)
-  func clearAuthState(sender: AxonifyLibXCFramework.AxonifyWebViewController)
 }
 public protocol AxonifyPushNotificationDelegate : AnyObject {
   func getDeviceToken(sender: AxonifyLibXCFramework.AxonifyWebViewController) -> Foundation.Data?
@@ -53,19 +45,13 @@ public protocol AxonifyAppReviewDelegate : AnyObject {
 }
 @objc @_Concurrency.MainActor(unsafe) public class AxonifyWebViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) weak public var delegate: AxonifyLibXCFramework.AxonifyWebViewControllerDelegate?
-  @_Concurrency.MainActor(unsafe) weak public var oAuthDelegate: AxonifyLibXCFramework.AxonifyOAuthDelegate?
+  @_Concurrency.MainActor(unsafe) weak public var authenticationDelegate: AxonifyLibXCFramework.AxonifyAuthenticationDelegate?
   @_Concurrency.MainActor(unsafe) weak public var pushNotificationDelegate: AxonifyLibXCFramework.AxonifyPushNotificationDelegate?
   @_Concurrency.MainActor(unsafe) weak public var multiTenantDelegate: AxonifyLibXCFramework.AxonifyMultiTenantDelegate?
   @_Concurrency.MainActor(unsafe) weak public var appReviewDelegate: AxonifyLibXCFramework.AxonifyAppReviewDelegate?
   @_Concurrency.MainActor(unsafe) public var splashScreenColor: UIKit.UIColor
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) convenience public init(splashScreenColor: UIKit.UIColor = .black)
-  @_Concurrency.MainActor(unsafe) convenience public init(splashScreenColor: UIKit.UIColor = .black, options: [Swift.String : Any]?)
-  @_Concurrency.MainActor(unsafe) convenience public init(delegate: AxonifyLibXCFramework.AxonifyWebViewControllerDelegate?, splashScreenColor: UIKit.UIColor = .black)
-  @_Concurrency.MainActor(unsafe) convenience public init(delegate: AxonifyLibXCFramework.AxonifyWebViewControllerDelegate?, splashScreenColor: UIKit.UIColor = .black, options: [Swift.String : Any]?)
-  @_Concurrency.MainActor(unsafe) convenience public init(delegate: AxonifyLibXCFramework.AxonifyWebViewControllerDelegate?, oAuthDelegate: AxonifyLibXCFramework.AxonifyOAuthDelegate?, splashScreenColor: UIKit.UIColor = .black)
-  @_Concurrency.MainActor(unsafe) convenience public init(delegate: AxonifyLibXCFramework.AxonifyWebViewControllerDelegate?, oAuthDelegate: AxonifyLibXCFramework.AxonifyOAuthDelegate?, splashScreenColor: UIKit.UIColor = .black, options: [Swift.String : Any]?)
-  @_Concurrency.MainActor(unsafe) public init(delegate: AxonifyLibXCFramework.AxonifyWebViewControllerDelegate?, oAuthDelegate: AxonifyLibXCFramework.AxonifyOAuthDelegate?, pushNotificationDelegate: AxonifyLibXCFramework.AxonifyPushNotificationDelegate?, multiTenantDelegate: AxonifyLibXCFramework.AxonifyMultiTenantDelegate?, appReviewDelegate: AxonifyLibXCFramework.AxonifyAppReviewDelegate?, splashScreenColor: UIKit.UIColor = .black, options: [Swift.String : Any]?)
+  @_Concurrency.MainActor(unsafe) public init(delegate: AxonifyLibXCFramework.AxonifyWebViewControllerDelegate? = nil, authenticationDelegate: AxonifyLibXCFramework.AxonifyAuthenticationDelegate? = nil, pushNotificationDelegate: AxonifyLibXCFramework.AxonifyPushNotificationDelegate? = nil, multiTenantDelegate: AxonifyLibXCFramework.AxonifyMultiTenantDelegate? = nil, appReviewDelegate: AxonifyLibXCFramework.AxonifyAppReviewDelegate? = nil, splashScreenColor: UIKit.UIColor = .black, options: [Swift.String : Any]? = nil)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func dismiss(animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
   @_Concurrency.MainActor(unsafe) public func loadAxonify(withURL url: Swift.String)
@@ -77,8 +63,6 @@ public protocol AxonifyAppReviewDelegate : AnyObject {
   @_Concurrency.MainActor(unsafe) public func clearAppData(reset: Swift.Bool = true)
   @_Concurrency.MainActor(unsafe) public func appDidBecomeActive()
   @_Concurrency.MainActor(unsafe) public func appWillResignActive()
-  @_Concurrency.MainActor(unsafe) public func accessTokenLoaded(accessToken: Swift.String?)
-  @_Concurrency.MainActor(unsafe) public func errorLoadingAccessToken(error: Swift.Error)
   @_Concurrency.MainActor(unsafe) public func getViewController() -> UIKit.UIViewController
   @objc deinit
 }
@@ -163,11 +147,36 @@ extension AxonifyLibXCFramework.Reachability {
 }
 public class KeychainHelper {
   public init()
-  open func set(data value: [Swift.String : Any], forKey key: Swift.String) -> Swift.Bool
+  open func set(data value: [Swift.String : Any], forKey key: Swift.String, service: Swift.String? = nil) -> Swift.Bool
   open func getData(_ key: Swift.String) -> [Swift.String : Any]?
+  public func deleteAll(service: Swift.String) -> Darwin.OSStatus
   open func delete(_ key: Swift.String) -> Swift.Bool
   open func clear() -> Swift.Bool
   @objc deinit
+}
+public struct IdentityProvider : Swift.Hashable {
+  public let endpoint: AxonifyLibXCFramework.IdentityProvider.Endpoint
+  public let clientId: Swift.String
+  public let redirect: Foundation.URL
+  public let scopes: [Swift.String]
+  public let name: Swift.String
+  public init(name: Swift.String, endpoint: AxonifyLibXCFramework.IdentityProvider.Endpoint, clientId: Swift.String, redirect: Foundation.URL, scopes: [Swift.String])
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: AxonifyLibXCFramework.IdentityProvider, b: AxonifyLibXCFramework.IdentityProvider) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AxonifyLibXCFramework.IdentityProvider {
+  @frozen public enum Endpoint : Swift.Hashable {
+    case discovery(Foundation.URL)
+    case fixed(authorization: Foundation.URL, token: Foundation.URL)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: AxonifyLibXCFramework.IdentityProvider.Endpoint, b: AxonifyLibXCFramework.IdentityProvider.Endpoint) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
 }
 public enum AxonifyError : Swift.Error {
   case badURL
@@ -197,12 +206,10 @@ extension AxonifyLibXCFramework.AxonifyError : Foundation.CustomNSError {
     get
   }
 }
-extension AxonifyLibXCFramework.OAuthProviderType : Swift.Equatable {}
-extension AxonifyLibXCFramework.OAuthProviderType : Swift.Hashable {}
-extension AxonifyLibXCFramework.OAuthProviderType : Swift.RawRepresentable {}
 @available(*, unavailable, renamed: "Connection")
 extension AxonifyLibXCFramework.Reachability.NetworkStatus : Swift.Equatable {}
 @available(*, unavailable, renamed: "Connection")
 extension AxonifyLibXCFramework.Reachability.NetworkStatus : Swift.Hashable {}
 extension AxonifyLibXCFramework.Reachability.Connection : Swift.Equatable {}
 extension AxonifyLibXCFramework.Reachability.Connection : Swift.Hashable {}
+extension AxonifyLibXCFramework.IdentityProvider.Endpoint : Swift.Sendable {}
