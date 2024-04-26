@@ -1,18 +1,18 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AxonifyLibXCFramework
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AxonifyLibXCFramework
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CommonCrypto
 import CoreTelephony
 import Foundation
 import SafariServices
-import Security
 import Swift
 import SystemConfiguration
 import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public class TenantService {
   public init()
   public func parseTenantString(tenantString: Swift.String) -> Swift.Bool
@@ -25,7 +25,7 @@ extension AxonifyLibXCFramework.TenantService : Swift.Equatable {
 }
 public protocol AxonifyAuthenticationDelegate : AnyObject {
   typealias Tokens = (access: Swift.String, id: Swift.String?)
-  func authenticate(sender: AxonifyLibXCFramework.AxonifyWebViewController, identityProvider: AxonifyLibXCFramework.IdentityProvider, completion: @escaping ((Swift.Result<Self.Tokens, Swift.Error>) -> Swift.Void))
+  func authenticate(sender: AxonifyLibXCFramework.AxonifyWebViewController, identityProvider: AxonifyLibXCFramework.IdentityProvider, completion: @escaping ((Swift.Result<Self.Tokens, any Swift.Error>) -> Swift.Void))
   func clearAuthState(sender: AxonifyLibXCFramework.AxonifyWebViewController)
 }
 public protocol AxonifyWebViewControllerDelegate : AnyObject {
@@ -44,14 +44,14 @@ public protocol AxonifyAppReviewDelegate : AnyObject {
   func showReviewMobileApp(sender: AxonifyLibXCFramework.AxonifyWebViewController)
 }
 @objc @_Concurrency.MainActor(unsafe) public class AxonifyWebViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) weak public var delegate: AxonifyLibXCFramework.AxonifyWebViewControllerDelegate?
-  @_Concurrency.MainActor(unsafe) weak public var authenticationDelegate: AxonifyLibXCFramework.AxonifyAuthenticationDelegate?
-  @_Concurrency.MainActor(unsafe) weak public var pushNotificationDelegate: AxonifyLibXCFramework.AxonifyPushNotificationDelegate?
-  @_Concurrency.MainActor(unsafe) weak public var multiTenantDelegate: AxonifyLibXCFramework.AxonifyMultiTenantDelegate?
-  @_Concurrency.MainActor(unsafe) weak public var appReviewDelegate: AxonifyLibXCFramework.AxonifyAppReviewDelegate?
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any AxonifyLibXCFramework.AxonifyWebViewControllerDelegate)?
+  @_Concurrency.MainActor(unsafe) weak public var authenticationDelegate: (any AxonifyLibXCFramework.AxonifyAuthenticationDelegate)?
+  @_Concurrency.MainActor(unsafe) weak public var pushNotificationDelegate: (any AxonifyLibXCFramework.AxonifyPushNotificationDelegate)?
+  @_Concurrency.MainActor(unsafe) weak public var multiTenantDelegate: (any AxonifyLibXCFramework.AxonifyMultiTenantDelegate)?
+  @_Concurrency.MainActor(unsafe) weak public var appReviewDelegate: (any AxonifyLibXCFramework.AxonifyAppReviewDelegate)?
   @_Concurrency.MainActor(unsafe) public var splashScreenColor: UIKit.UIColor
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) public init(delegate: AxonifyLibXCFramework.AxonifyWebViewControllerDelegate? = nil, authenticationDelegate: AxonifyLibXCFramework.AxonifyAuthenticationDelegate? = nil, pushNotificationDelegate: AxonifyLibXCFramework.AxonifyPushNotificationDelegate? = nil, multiTenantDelegate: AxonifyLibXCFramework.AxonifyMultiTenantDelegate? = nil, appReviewDelegate: AxonifyLibXCFramework.AxonifyAppReviewDelegate? = nil, splashScreenColor: UIKit.UIColor = .black, options: [Swift.String : Any]? = nil)
+  @_Concurrency.MainActor(unsafe) public init(delegate: (any AxonifyLibXCFramework.AxonifyWebViewControllerDelegate)? = nil, authenticationDelegate: (any AxonifyLibXCFramework.AxonifyAuthenticationDelegate)? = nil, pushNotificationDelegate: (any AxonifyLibXCFramework.AxonifyPushNotificationDelegate)? = nil, multiTenantDelegate: (any AxonifyLibXCFramework.AxonifyMultiTenantDelegate)? = nil, appReviewDelegate: (any AxonifyLibXCFramework.AxonifyAppReviewDelegate)? = nil, splashScreenColor: UIKit.UIColor = .black, options: [Swift.String : Any]? = nil)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func dismiss(animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
   @_Concurrency.MainActor(unsafe) public func loadAxonify(withURL url: Swift.String)
@@ -144,15 +144,6 @@ extension AxonifyLibXCFramework.Reachability {
   public var description: Swift.String {
     get
   }
-}
-public class KeychainHelper {
-  public init()
-  open func set(data value: [Swift.String : Any], forKey key: Swift.String, service: Swift.String? = nil) -> Swift.Bool
-  open func getData(_ key: Swift.String) -> [Swift.String : Any]?
-  public func deleteAll(service: Swift.String) -> Darwin.OSStatus
-  open func delete(_ key: Swift.String) -> Swift.Bool
-  open func clear() -> Swift.Bool
-  @objc deinit
 }
 public struct IdentityProvider : Swift.Hashable {
   public let endpoint: AxonifyLibXCFramework.IdentityProvider.Endpoint

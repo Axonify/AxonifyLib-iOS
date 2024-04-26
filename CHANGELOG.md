@@ -1,5 +1,14 @@
 # AxonifyLib Changelog
 
+## 4.0.0
+### Build Changes
+- AxonifyLibXCFramework is now built with Xcode 15
+- The minimum supported iOS version (deployment target) is now iOS 12
+- A [privacy manifest](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files) has been added, including [required reason APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api) to satisfy Apple's latest requirements
+
+### API
+- The `KeychainHelper` interface has been removed
+
 ## 3.0.0
 
 ### Functionality Changes
