@@ -3830,6 +3830,67 @@
           },
           {
             "kind": "Var",
+            "name": "prompt",
+            "printedName": "prompt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21AxonifyLibXCFramework16IdentityProviderV6promptSSSgvp",
+            "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV6promptSSSgvp",
+            "moduleName": "AxonifyLibXCFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21AxonifyLibXCFramework16IdentityProviderV6promptSSSgvg",
+                "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV6promptSSSgvg",
+                "moduleName": "AxonifyLibXCFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "name",
             "printedName": "name",
             "children": [
@@ -3876,7 +3937,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(name:endpoint:clientId:redirect:scopes:)",
+            "printedName": "init(name:endpoint:clientId:redirect:scopes:prompt:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3921,11 +3982,26 @@
                   }
                 ],
                 "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:21AxonifyLibXCFramework16IdentityProviderV4name8endpoint8clientId8redirect6scopesACSS_AC8EndpointOSS10Foundation3URLVSaySSGtcfc",
-            "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV4name8endpoint8clientId8redirect6scopesACSS_AC8EndpointOSS10Foundation3URLVSaySSGtcfc",
+            "usr": "s:21AxonifyLibXCFramework16IdentityProviderV4name8endpoint8clientId8redirect6scopes6promptACSS_AC8EndpointOSS10Foundation3URLVSaySSGSSSgtcfc",
+            "mangledName": "$s21AxonifyLibXCFramework16IdentityProviderV4name8endpoint8clientId8redirect6scopes6promptACSS_AC8EndpointOSS10Foundation3URLVSaySSGSSSgtcfc",
             "moduleName": "AxonifyLibXCFramework",
             "declAttributes": [
               "AccessControl",
@@ -7170,7 +7246,7 @@
     {
       "filePath": "\/Users\/rmathers\/Developer\/axonify-ios\/AxonifyLibXCFramework\/AxonifyLibXCFramework\/Authentication\/IdentityProvider.swift",
       "kind": "Array",
-      "offset": 3328,
+      "offset": 3620,
       "length": 2,
       "value": "[]"
     },

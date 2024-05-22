@@ -1,5 +1,12 @@
 # AxonifyLib Changelog
 
+## 4.1.0
+### New Features
+Support for reading the `prompt` value for OpenID Connect and OAuth providers from the Axonify server.
+
+### API
+`identityProvider` has a new `prompt` property, which is an optional `String` with space-separated values. See the [OpenID Connect Authentication Request documentation](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest) for details.
+
 ## 4.0.0
 ### Build Changes
 - AxonifyLibXCFramework is now built with Xcode 15

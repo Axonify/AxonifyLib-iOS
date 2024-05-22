@@ -150,8 +150,9 @@ public struct IdentityProvider : Swift.Hashable {
   public let clientId: Swift.String
   public let redirect: Foundation.URL
   public let scopes: [Swift.String]
+  public let prompt: Swift.String?
   public let name: Swift.String
-  public init(name: Swift.String, endpoint: AxonifyLibXCFramework.IdentityProvider.Endpoint, clientId: Swift.String, redirect: Foundation.URL, scopes: [Swift.String])
+  public init(name: Swift.String, endpoint: AxonifyLibXCFramework.IdentityProvider.Endpoint, clientId: Swift.String, redirect: Foundation.URL, scopes: [Swift.String], prompt: Swift.String? = nil)
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: AxonifyLibXCFramework.IdentityProvider, b: AxonifyLibXCFramework.IdentityProvider) -> Swift.Bool
   public var hashValue: Swift.Int {
