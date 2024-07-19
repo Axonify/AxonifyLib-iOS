@@ -1,5 +1,12 @@
 # AxonifyLib Changelog
 
+## 4.2.0
+### New Features
+Support for more efficient navigation when opening push notifications.
+
+### API
+*None*
+
 ## 4.1.0
 ### New Features
 Support for reading the `prompt` value for OpenID Connect and OAuth providers from the Axonify server.

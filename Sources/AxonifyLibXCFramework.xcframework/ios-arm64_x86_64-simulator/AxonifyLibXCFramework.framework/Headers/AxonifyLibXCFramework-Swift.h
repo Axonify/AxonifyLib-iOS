@@ -311,7 +311,6 @@ SWIFT_CLASS("_TtC21AxonifyLibXCFramework24AxonifyWebViewController")
 @end
 
 
-
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -631,7 +630,6 @@ SWIFT_CLASS("_TtC21AxonifyLibXCFramework24AxonifyWebViewController")
 - (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^ _Nullable)(void))completion;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
-
 
 
 #endif
