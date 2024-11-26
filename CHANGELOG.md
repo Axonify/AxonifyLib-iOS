@@ -1,5 +1,12 @@
 # AxonifyLib Changelog
 
+## 4.3.0
+### Build Changes
+- AxonifyLibXCFramework is now built with Xcode 16. This should not be a breaking change, and should be usable in apps built on Xcode 15.
+
+### API
+*No changes*
+
 ## 4.2.0
 ### New Features
 Support for more efficient navigation when opening push notifications.
